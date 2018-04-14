@@ -12,3 +12,8 @@
 **Secondary Color:** Blue #900
 **Layout:** Light grey background, white background containers
 **Font:** Open Sans
+
+##Todo's
+- Build the damn thing
+- Build the individual containers
+- Build option to toggle free/paid subscription modes
