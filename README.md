@@ -22,7 +22,7 @@
 
 **Font:** Open Sans
 
-##Todo's
+## Todo's
 - Build the damn thing
 - Build the individual containers
 - Build option to toggle free/paid subscription modes
