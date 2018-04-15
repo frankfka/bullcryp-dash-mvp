@@ -53,10 +53,10 @@ function contract(){
     display.style.transition = "all 0.5s";
 
     //icons
-    navElements[0].innerHTML = "<img width='50' height='56' src='./imgs/Overview.png' alt='overview icon'/>";
-    navElements[1].innerHTML = "<img width='50' height='56' src='./imgs/Trade.png' alt='trade icon'/>";
-    navElements[2].innerHTML = "<img width='50' height='56' src='./imgs/Portfolio.png' alt='portfolio icon'/>";
-    navElements[3].innerHTML = "<img width='50' height='56' src='./imgs/Settings.png' alt='settings icon'/>";
+    navElements[0].innerHTML = "<img width='50' height='56' src='../imgs/Overview.png' alt='overview icon'/>";
+    navElements[1].innerHTML = "<img width='50' height='56' src='../imgs/Trade.png' alt='trade icon'/>";
+    navElements[2].innerHTML = "<img width='50' height='56' src='../imgs/Portfolio.png' alt='portfolio icon'/>";
+    navElements[3].innerHTML = "<img width='50' height='56' src='../imgs/Settings.png' alt='settings icon'/>";
 }
 
 function Dexpand(){
