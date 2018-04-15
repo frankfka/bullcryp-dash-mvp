@@ -1,13 +1,25 @@
+body {
+    background-color: #F5F5F5;
+}
+
 h1#greeting {
-    margin: 0 auto;
-    margin-top: 60px; 
+    margin: 0 auto; 
     font-weight: 1000;
+    font-size: 3em;
 }
 h1#greeting, h3#currPortfolio {
     text-align: center;
+    margin: 0 auto; 
 }
 h3#currPortfolio {
+    font-size: 1.4em;
     color: #FF8F00;
+}
+.header {
+    padding-top: 5em;
+    padding-bottom: 2em; 
+    top: 80px;
+    background-color: #ffffff;
 }
 #overview_trend {
     margin: 0 auto;
@@ -15,13 +27,11 @@ h3#currPortfolio {
     width: 700px;
     height: 400px;
     text-align: center;
-    border: solid 1px gray;
 }
 .Tgraphs {
     margin-top: 5%;
     width: 300px;
     height: 340px;
-    border: solid 1px gray;
 }
 .holder {
     text-align: center;
@@ -33,15 +43,24 @@ h3#currPortfolio {
 }
 .gainer, .loser {
     display: inline-block;
+    background-color: #ffffff;
+    width: 36vw;
+}
+.gainer h3, .loser h3, #todayNews h3 {
+    font-size: 1.4em;
 }
 .loser {
     margin-left: 70px;
 }
-#todayNews {
-    margin: 0 auto;
+.todayNews {
+    padding-top: 1em;
+    background-color: #ffffff;
+    text-align: center;
     margin-top: 5%;
-    width: 680px;
-    height: 400px;
-    padding-left: 20px;
-    border: solid 1px gray;
+    width: 80vw;
+    margin-bottom: 3em;
+}
+.todayNews img {
+    width: 100%;
+    height: 100%;
 }
