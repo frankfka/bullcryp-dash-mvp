@@ -25,10 +25,16 @@ controls.addEventListener('click', function expand(ev){
 
 //Navigation
 navElements[0].addEventListener('click', function(ev){
-    location.href = "../index.html";
+    location.href = "./index.html";
+});
+navElements[1].addEventListener('click', function(ev){
+    location.href = "../bullcryp-dash-mvp/html/trade.html";
 });
 navElements[2].addEventListener('click',function(ev){
     location.href = "../bullcryp-dash-mvp/html/portfolio.html";
+});
+navElements[3].addEventListener('click', function(ev){
+    location.href = "../bullcryp-dash-mvp/html/settings.html";
 });
 
 

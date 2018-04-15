@@ -8,6 +8,7 @@
     <!--Stylesheets-->
     <link href="../css/dashboard.css" type="text/css" rel="stylesheet">
     <link href="../css/main.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio.css" type="text/css" rel="stylesheet">
     <!--Open Sans Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -32,7 +33,35 @@
             </div>
         </div>
         <!--Main Display-->
-        <div class="display" id="generalDisplay"></div>
+        <div class="display" id="generalDisplay">
+            <h1 class="headingBig" id="portfolioHeading">Portfolio Value: &dollar;20,000</h1>
+            <div class="portOverview" id="portHistory">
+                <h3 class="headThird" id="portHisHead">Portfolio History</h3>
+                <img width="700" height="400" src="../imgs/overviewSample.png" alt="portfolio history">
+                <input type="range" min="1" max="7" value="4" class="slider" name="timeline" id="timeline">
+                <div class="sliderText" id="slideText">
+                    <button class="dates1" name="1hr" id="1hr">1hr</button>
+                    <button class="dates" name="24hr" id="24hr">24hr</button>
+                    <button class="dates" name="1wk" id="1wk">1wk</button>
+                    <button class="dates current" name="1mo" id="1mo">1mo</button>
+                    <button class="dates" name="3mo" id="3mo">3mo</button>
+                    <button class="dates" name="6mo" id="6mo">6mo</button>
+                    <button class="dates" name="1yr" id="1yr">1yr</button>
+                </div>
+            </div>
+            <div class="exAndHold" id="ExchangeCoin">
+                <div class="ExandCoinToggle" id="ExandCoinToggle">
+                    <div class="ExToggle currExch" id="Exchange">By Exchange</div>
+                    <div class="ExToggle" id="Coin">By Coin</div>
+                </div>
+                <div class="ExCoinDisplay" id="ExCoinDisplay">
+                    <div class="diagramPie" id="pie1"></div>
+                    <div class="holdings" id="holdings1">
+                        <h2 class="headingHold" id="HeadHold1">Holdings By Coin</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
      <!-- Scripts -->
      <script src="../js/dash.js" type="text/javascript">

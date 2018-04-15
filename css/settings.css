@@ -1,0 +1,19 @@
+#settingsContainer{
+    width: 800px;
+}
+#settingsTab {
+    border: solid 1px #FF8F00;
+    padding: 10px;
+}
+.current {
+    color: #FF8F00;
+}
+.settingsNav {
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#settingsDisplay{
+    height: 600px;
+    background-color: lightgray;
+}
