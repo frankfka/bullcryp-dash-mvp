@@ -26,10 +26,9 @@
     width: 100px;
     color: white;
     background-color: #FF8F00;
-    border: solid 1px white;
 }
 .logout:hover {
-    background-color: rgb(215, 122, 0);
+    background-color: #FF9800;
 }
 .nav_element:hover {
     color: white;

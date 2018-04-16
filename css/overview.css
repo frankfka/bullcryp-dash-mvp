@@ -1,26 +1,37 @@
+body {
+    background-color: #F5F5F5;
+}
+
 h1#greeting {
     margin-top: 60px; 
     font-weight: 1000;
+    font-size: 3em;
 }
 h1#greeting, h3#currPortfolio {
     text-align: center;
+    margin: 0 auto; 
 }
 h3#currPortfolio {
+    font-size: 1.4em;
     color: #FF8F00;
+}
+.header {
+    padding-top: 5em;
+    padding-bottom: 2em; 
+    top: 80px;
+    background-color: #ffffff;
 }
 #overview_trend {
     margin-top: 30px;
     width: 75vw;
     height: 400px;
     text-align: center;
-    border: solid 1px gray;
 }
 .Tgraphs {
     margin-top: 30px;
     padding-left: 20px;
     width: 32vw;
     height: 340px;
-    border: solid 1px gray;
 }
 .holder {
     margin-top: 30px;
@@ -32,6 +43,11 @@ h3#currPortfolio {
 }
 .gainer, .loser {
     display: inline-block;
+    background-color: #ffffff;
+    width: 36vw;
+}
+.gainer h3, .loser h3, #todayNews h3 {
+    font-size: 1.4em;
 }
 .loser {
     margin-left: 70px;
