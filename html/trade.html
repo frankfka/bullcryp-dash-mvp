@@ -8,6 +8,7 @@
     <!--Stylesheets-->
     <link href="../css/dashboard.css" type="text/css" rel="stylesheet">
     <link href="../css/main.css" type="text/css" rel="stylesheet">
+    <link href="../css/trade.css" type="text/css" rel="stylesheet">
     <!--Open Sans Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -32,7 +33,90 @@
             </div>
         </div>
         <!--Main Display-->
-        <div class="display" id="generalDisplay"></div>
+        <div class="display" id="generalDisplay">
+            <div class="section">
+                <div class="tabs">
+                    <div class="tabSec tabselected">BTC/USD</div>
+                    <div class="tabSec">Add Tab</div>
+                </div>
+                <div class="tabPlaceholder">
+                    <div class="tabPlaceHead">
+                        <h2>BTC/USD (Poloniex)
+                            <input class="formInputs search" id="search" title="search" type="text" placeholder="Search Trading Pair" size="40">
+                            <button class="search" id="searchBut">Search</button>
+                        </h2>
+                    </div>
+                    <div class="tradePlace">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="Launch">Launch Chart</div>
+                            <div id="tv-medium-widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                            new TradingView.MediumWidget(
+                            {
+                            "container_id": "tv-medium-widget",
+                            "symbols": [
+                            [
+                                "Portfolio",
+                                "BITFINEX:BTCUSD|1y"
+                            ]
+                            ],
+                            "greyText": "Quotes by",
+                            "gridLineColor": "rgba(101, 101, 101, 0)",
+                            "fontColor": "#83888D",
+                            "underLineColor": "rgba(252, 229, 205, 0.15)",
+                            "trendLineColor": "rgba(255, 152, 0, 1)",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "en",
+                            "chartOnly": true
+                        }
+                            );
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                    <div class="orderTrade">
+                            <div class="orderbook" id="orderbook">
+                                <h2>Order Book</h2>
+                                <div class="chartHold"></div>
+                            </div>
+                            <div class="orderbook" id="buySell">
+                                <h2>Buy/Sell</h2>
+                                <h4>Basic Attention Token (Binance)</h4>
+                                <p><b>Currently Held:</b> 1 BAT (0.0001 BTC / 20 USD)</p>
+                                <p><b>On Order:</b> 2.3 BAT (0.000023 BTC/ 40 USD)</p>
+                                <p><b>Market Price:</b> 0.000003 BTC (10 USD)</p>
+                                <button class="buy_sell" id="buy">Buy</button>
+                                <button class="buy_sell" id="sell">Sell</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                    <div class="tabPlaceHead">
+                        <h2>Rapid Order
+                            <select class="formInputs" name="tradePaird">
+                                <option value="volvo">Search Trading Pair</option>
+                                <option value="saab">Saab 95</option>
+                                <option value="mercedes">Mercedes SLK</option>
+                                <option value="audi">Audi TT</option>
+                            </select>
+                            <input class="formInputs" type="number" placeholder="Amount">
+                            <select class="formInputs">
+                                <option value="USD">USD</option>
+                                <option value="BTC">BTC</option>
+                            </select>
+                            <select class="formInputs">
+                                <option value="buying">Buy</option>
+                                <option value="selling">Sell</option>
+                            </select>
+                            <button class="buy_sell" type="submit" value="Execute">Execute</button>
+                        </h2>
+                    </div>
+            </div>
+        </div>
     </div>
      <!-- Scripts -->
      <script src="../js/dash.js" type="text/javascript">
