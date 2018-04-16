@@ -15,9 +15,9 @@ h3#currPortfolio {
     color: #FF8F00;
 }
 .header {
-    width: 77vw;
+    width: 100vw;
     padding-top: 5em;
-    padding-bottom: 2em; 
+    padding-bottom: 2em;
     top: 80px;
     background-color: #ffffff;
     border-bottom: solid 0.25px rgba(0,0,0,0.75);
@@ -134,5 +134,5 @@ p.dateStamp {
     color: #FF8F00;
 }
 .tradingview-widget-container {
-    width: 77vw;
+    width: 100vw;
 }
