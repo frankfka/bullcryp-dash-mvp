@@ -1,11 +1,11 @@
 body {
-    background-color: #F5F5F5;
+    background-color: #FAFAFA;
 }
 
 h1#greeting {
     margin-top: 60px; 
     font-weight: 1000;
-    font-size: 3em;
+    font-size: 4em;
 }
 h1#greeting, h3#currPortfolio {
     text-align: center;
@@ -20,6 +20,7 @@ h3#currPortfolio {
     padding-bottom: 2em; 
     top: 80px;
     background-color: #ffffff;
+    border-bottom: solid 0.25px rgba(0,0,0,0.75);
 }
 #overview_trend {
     margin-top: 30px;
@@ -28,10 +29,8 @@ h3#currPortfolio {
     text-align: center;
 }
 .Tgraphs {
-    margin-top: 30px;
     padding-left: 20px;
     width: 32vw;
-    height: 340px;
 }
 .holder {
     margin-top: 30px;
@@ -45,9 +44,11 @@ h3#currPortfolio {
     display: inline-block;
     background-color: #ffffff;
     width: 36vw;
+    border: solid 0.25px rgba(0,0,0,0.2);
 }
 .gainer h3, .loser h3, #todayNews h3 {
-    font-size: 1.4em;
+    font-size: 1.6em;
+    margin-top: 0.8em;
 }
 .loser {
     margin-left: 70px;
@@ -55,20 +56,38 @@ h3#currPortfolio {
 #todayNews {
     margin-top: 30px;
     width: 73vw;
-    height: 400px;
     padding-left: 20px;
-    border: solid 1px gray;
+    border: solid 0.25px rgba(0,0,0,0.2);
+    background-color: #ffffff;
 }
 table {
     width: 95%;
     border-collapse: collapse;
+    margin: 1em auto;
+    color: rgba(0,0,0,0.6);
+    height: 30px;
 }
-#first_row {
-    border-bottom: solid 1px #FF8F00;
+table tbody {
+    color: rgba(0,0,0,0.8);
+}
+.first_row {
+    border-bottom: solid 1px rgba(255,143,0,0.6);
     text-align: left;
+}
+.tableData + .gain, .tableData + .loss {
+    opacity: 0.7;
 }
 .gain {
     color: green;
+}
+.loss {
+    color: red;
+}
+.newscontainer {
+    padding-left: 1em !important;
+    padding-right: 1.2em !important;  
+    margin-bottom: 1em;
+    margin-top: 1em;  
 }
 .news_nav {
     width: 100%;
@@ -97,12 +116,20 @@ ul {
     float: left;
     margin-right: 20px;
 }
+.contentNews h4 {
+    font-size: 1.2em;
+    opacity: 0.8;
+    margin-top: -3pt;
+    margin-bottom: 0pt;
+}
+.contentNews p {
+    opacity: 0.7;
+}
+.todayNews {
+    margin-bottom: 3em;
+    padding-bottom: 1.4em;
+}
 p.dateStamp {
     font-size: 10pt;
     color: #FF8F00;
-}
-h4 {
-    margin-top: -3pt;
-    margin-bottom: 0pt;
-    font-size: 18pt;
 }
