@@ -21,10 +21,10 @@
                     <img class="logo" id="bullcryp_logo" width="100" height="100" src="./imgs/logo.png" alt="Bullcryp logo"/>
                 </div>
                 <div class="navigation" id="nav">
-                    <div class="nav_element selected" id="Overview">Overview</div>
-                    <div class="nav_element" id="Trade">Trade</div>
-                    <div class="nav_element" id="Portfolio">Portfolio</div>
-                    <div class="nav_element" id="Settings">Settings</div>
+                    <div class="nav_element selected" id="Overview"><img class="icon_images" src="./imgs/Overview_icon.png" alt="overview">Overview</div>
+                    <div class="nav_element" id="Trade"><img class="icon_images" src="./imgs/Trade_icon.png" alt="trade">Trade</div>
+                    <div class="nav_element" id="Portfolio"><img class="icon_images" src="./imgs/Portfolio_icon.png" alt="portfolio">Portfolio</div>
+                    <div class="nav_element" id="Settings"><img class="icon_images" src="./imgs/Settings_icon.png" alt="settings">Settings</div>
                     <div class="logout" id="logout">
                         Logout
                     </div>
@@ -39,13 +39,59 @@
             <h3 class="currPortfolio" id="currPortfolio">Your Portfolio Balance is: &dollar;20,000</h3>
             <!-- Overview -->
             <div class="graphs" id="overview_trend">
-                <img width="700" height="400" class="overviewSample" id="overviewSample" src="./imgs/overviewSample.png" alt="my Overview graph"/>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div id="tv-medium-widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.MediumWidget(
+                        {
+                        "container_id": "tv-medium-widget",
+                        "symbols": [
+                        [
+                            "Portfolio",
+                            "BITFINEX:BTCUSD|1y"
+                        ]
+                        ],
+                        "gridLineColor": "rgba(101, 101, 101, 0)",
+                        "underLineColor": "rgba(252, 229, 205, 0.15)",
+                        "trendLineColor": "rgba(255, 152, 0, 1)",
+                        "width": "100%",
+                        "height": "100%",
+                        "locale": "en",
+                        "chartOnly": true
+                    }
+                    );
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
             </div>
             <!-- Top gainers an Losers -->
             <div class="holder" id="top_and_lose">
                 <div class="gainer" id="gainer">
                     <div class="Tgraphs" id="topGainers">
                         <h3 class="DayInfo">Today's Top Gainers</h3>
+                        <table>
+                            <thead>
+                                <tr id="first_row">
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Change (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tableData">Bitcoin</td>
+                                    <td class="tableData">&dollar; 200,000</td>
+                                    <td class="tableData gain">+100.00%</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableData">Bitcoin</td>
+                                    <td class="tableData">&dollar; 200,000</td>
+                                    <td class="tableData gain">+100.00%</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="loser" id="loser">
@@ -57,6 +103,21 @@
             <!-- Latest News -->
             <div class="todayNews" id="todayNews">
                 <h3 class="DayInfo">Latest News</h3>
+                <div>
+                    <ul class="news_nav" id="news_nav">
+                        <li class="newsElement" id="news">News</li>
+                        <li class="newsElement" id="reddit">Reddit</li>
+                        <li class="newsElement" id="calendar">Calendar</li>
+                    </ul>
+                    <div class="newscontainer" id="newscontainer">
+                        <div class="picture"></div>
+                        <div class="contentNews">
+                            <p class="dateStamp">Cointelegraph - 1 hour ago</p>
+                            <h4>Bitcoin Surpasses $1M</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Nulla elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac ceque. Duis vul[utate commodo lectuc,</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

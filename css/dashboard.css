@@ -1,21 +1,20 @@
 /**** Dashboard Elements ****/
 .dashboard, .navigation {
     width: 200px;
+    user-select: none;
 }
 .dashboard {
     height: 100vh;
     background-color: rgb(70, 70, 70);
     color: lightgray;
-    float: left;
     font-size: 16pt;
-    padding-top: 3%;
+    padding-top: 50px;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 .dashboard_wrap {
     position: fixed;
-}
-.navigation {
-    text-align: center;
 }
 .nav_element, .logout {
     cursor: pointer;
@@ -40,16 +39,22 @@
     width: 100px;
     margin-left: 50px;
     text-align: center;
-    margin-bottom: 3vh;
+    margin-bottom: 30px;
 }
 .controls {
     font-size: 40pt;
-    margin-top: 3vh;
+    margin-top: 30px;
     cursor: pointer;
+    text-align: center;
 }
 .controls:hover {
     color: white;
     background-color: gray;
+}
+.icon_images {
+    width: 22px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 /**** Letting users know which tab they are on ****/

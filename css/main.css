@@ -14,6 +14,6 @@ body {
 
 /**** Display Elements ****/
 .display {
-    width: 80vw;
-    float: right;
+    margin-left: 200px;
+    padding-left: 40px;
 }

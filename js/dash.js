@@ -42,6 +42,7 @@ navElements[3].addEventListener('click', function(ev){
 function contract(){
     dashboard.style.width = "100px";
     navigation.style.width = "100px";
+    navigation.style.textAlign = "center";
     dashboard.style.transition = "all 0.5s";
     navigation.style.transition = "all 0.5s";
     logo.style.marginLeft = "25px";
@@ -55,7 +56,7 @@ function contract(){
     logout_button.style.marginLeft = "0";
     logout_button.style.opacity = "0";
     logout_button.style.transition = "all 0.5s";
-    display.style.width = "90vw";
+    display.style.marginLeft = "100px";
     display.style.transition = "all 0.5s";
 
     //icons
@@ -68,6 +69,7 @@ function contract(){
 function Dexpand(){
     dashboard.style.width = "200px";
     navigation.style.width = "200px";
+    navigation.style.textAlign = "left";
     dashboard.style.transition = "all 0.5s";
     navigation.style.transition = "all 0.5s";
     logo.style.marginLeft = "50px";
@@ -80,12 +82,12 @@ function Dexpand(){
     logout_button.style.pointerEvents = "auto";
     logout_button.innerHTML = "Logout";
     logout_button.style.opacity = "1";
-    display.style.width = "80vw";
+    display.style.marginLeft = "200px";
     display.style.transition = "all 0.5s";
 
     //icons vanish
-    navElements[0].innerHTML = "Overview";
-    navElements[1].innerHTML = "Trade";
-    navElements[2].innerHTML = "Portfolio";
-    navElements[3].innerHTML = "Settings";
+    navElements[0].innerHTML = "<img class='icon_images' src='../imgs/Overview_icon.png' alt='overview'>Overview";
+    navElements[1].innerHTML = "<img class='icon_images' src='../imgs/Trade_icon.png' alt='trade'>Trade";
+    navElements[2].innerHTML = "<img class='icon_images' src='../imgs/Portfolio_icon.png' alt='portfolio'>Portfolio";
+    navElements[3].innerHTML = "<img class='icon_images' src='../imgs/Settings_icon.png' alt='settings'>Settings";
 }

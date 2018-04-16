@@ -1,5 +1,4 @@
 h1#greeting {
-    margin: 0 auto;
     margin-top: 60px; 
     font-weight: 1000;
 }
@@ -10,26 +9,26 @@ h3#currPortfolio {
     color: #FF8F00;
 }
 #overview_trend {
-    margin: 0 auto;
-    margin-top: 5%;
-    width: 700px;
+    margin-top: 30px;
+    width: 75vw;
     height: 400px;
     text-align: center;
     border: solid 1px gray;
 }
 .Tgraphs {
-    margin-top: 5%;
-    width: 300px;
+    margin-top: 30px;
+    padding-left: 20px;
+    width: 32vw;
     height: 340px;
     border: solid 1px gray;
 }
 .holder {
-    text-align: center;
-    margin-top: 5%;
+    margin-top: 30px;
     width: 80vw;
 }
 .DayInfo {
     margin-top: 20px;
+    text-align: center;
 }
 .gainer, .loser {
     display: inline-block;
@@ -38,10 +37,56 @@ h3#currPortfolio {
     margin-left: 70px;
 }
 #todayNews {
-    margin: 0 auto;
-    margin-top: 5%;
-    width: 680px;
+    margin-top: 30px;
+    width: 73vw;
     height: 400px;
     padding-left: 20px;
     border: solid 1px gray;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+#first_row {
+    border-bottom: solid 1px #FF8F00;
+    text-align: left;
+}
+.gain {
+    color: green;
+}
+.news_nav {
+    width: 100%;
+    text-align: center;
+}
+#news {
+    margin-left: 0;
+    border-bottom: solid 1px #FF8F00;
+}
+.newsElement {
+    color: #FF8F00;
+    display: inline-block;
+    padding: 10px 60px 10px 60px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.picture {
+    width: 120px;
+    height: 120px;
+    background-color: gray;
+    float: left;
+    margin-right: 20px;
+}
+p.dateStamp {
+    font-size: 10pt;
+    color: #FF8F00;
+}
+h4 {
+    margin-top: -3pt;
+    margin-bottom: 0pt;
+    font-size: 18pt;
 }
