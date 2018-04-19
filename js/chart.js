@@ -60,9 +60,9 @@ function generateChartData() {
 
    var chart = AmCharts.makeChart( "chartdiv", {
             "type": "stock",
-            "theme": "dark",
+            "theme": "light",
             "dataSets": [ {
-                "title": "first data set",
+                "title": "BTC/USD",
                 "fieldMappings": [ {
                     "fromField": "value",
                     "toField": "value"
@@ -108,18 +108,18 @@ function generateChartData() {
             }
             ],
             "panels": [ {
-                "showCategoryAxis": false,
-                "title": "",
-                "percentHeight": 70,
+                "showCategoryAxis": true,
+                "title": "Overview",
+                "percentHeight": 100,
                 "stockGraphs": [ {
                     "id": "g1",
                     "valueField": "value",
-                    "comparable": false,
+                    "comparable": true,
                     "compareField": "value",
                     "balloonText": "[[title]]:<b>[[value]]</b>",
                     "compareGraphBalloonText": "[[title]]:<b>[[value]]</b>",
                     "lineThickness": 2,
-                    "lineColor": "#ffffff"
+                    "lineColor": "#00000"
                 }],
                 "stockLegend": {
                     "periodValueTextComparing": "[[percents.value.close]]%",
@@ -131,14 +131,14 @@ function generateChartData() {
                     }
                 ]
             }, {
-                "title": "",
-                "percentHeight": 30,
+                "title": "Trend",
+                "percentHeight": 40,
                 "stockGraphs": [ {
                     "valueField": "volume",
                     "type": "column",
-                    "showBalloon": false,
+                    "showBalloon": true,
                     "fillAlphas": 1,
-                  "fillColor": "#ffffff"
+                  "fillColor": "#000000"
                 } ],
                 "stockLegend": {
                     "periodValueTextRegular": "[[value.close]]"
@@ -150,8 +150,9 @@ function generateChartData() {
                 ]
             } ],
             "panelsSettings": {
-                "marginRight": 60,
-                "marginBottom": 5
+                "marginRight": 50,
+                "marginBottom": 5,
+                "marginLeft": 10
             },
             "valueAxesSettings": {
                 "inside": false,
@@ -162,7 +163,7 @@ function generateChartData() {
 
             "chartCursorSettings": {
                 "valueBalloonsEnabled": true,
-                "fullWidth": true,
+                "fullWidth": false,
                 "cursorAlpha": 0.1,
                 "valueLineBalloonEnabled": true,
                 "valueLineEnabled": true,
