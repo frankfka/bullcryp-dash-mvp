@@ -8,44 +8,42 @@ h1#greeting {
 }
 h1#greeting, h3#currPortfolio {
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 h3#currPortfolio {
     font-size: 1.4em;
     color: #FF8F00;
 }
 .header {
-    width: 100vw;
     padding-top: 5em;
     padding-bottom: 2em;
-    top: 80px;
     background-color: #ffffff;
     border-bottom: solid 0.25px rgba(0,0,0,0.75);
 }
 #overview_trend {
     margin-top: 30px;
-    width: 75vw;
+    width: 100%;
     height: 400px;
     text-align: center;
 }
 .Tgraphs {
-    padding-left: 20px;
-    width: 32vw;
+    padding-left: 30px;
 }
 .holder {
+    display: flex;
     margin-top: 30px;
-    width: 80vw;
 }
 .DayInfo {
     margin-top: 20px;
     text-align: center;
 }
 .gainer, .loser {
-    display: inline-block;
     background-color: #ffffff;
-    width: 36vw;
+    width: 50%;
     border: solid 0.25px rgba(0,0,0,0.2);
+    overflow: scroll;        
 }
+
 .gainer h3, .loser h3, #todayNews h3 {
     font-size: 1.6em;
     margin-top: 0.8em;
@@ -55,7 +53,6 @@ h3#currPortfolio {
 }
 #todayNews {
     margin-top: 30px;
-    width: 73vw;
     padding-left: 20px;
     border: solid 0.25px rgba(0,0,0,0.2);
     background-color: #ffffff;
@@ -133,6 +130,23 @@ p.dateStamp {
     font-size: 10pt;
     color: #FF8F00;
 }
-.tradingview-widget-container {
-    width: 100vw;
+#chartdiv {
+    width: 100%;
+    height: 400px;
+    border-bottom: solid 0.25px rgba(0,0,0,0.2);
+}
+.overviewInfo {
+    display: flex;
+    text-align: center;
+}
+.overviewInfo_item {
+    width: 33.33%;
+    text-align: center;
+}
+h4.price {
+    font-size: 16pt;
+}
+.plusgain {
+    color:  #FF8F00;
+    font-size: 14pt;
 }

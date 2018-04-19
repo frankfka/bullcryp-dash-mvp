@@ -17,5 +17,8 @@ body {
 /**** Display Elements ****/
 .display {
     margin-left: 200px;
-    padding-left: 40px;
+}
+.margin {
+    margin-left: 40px;
+    margin-right: 40px;
 }
