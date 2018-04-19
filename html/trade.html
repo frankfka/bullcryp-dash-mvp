@@ -34,92 +34,63 @@
         </div>
         <!--Main Display-->
         <div class="display" id="generalDisplay">
-            <div class="section">
-                <div class="tabs">
-                    <div class="tabSec tabselected">BTC/USD</div>
-                    <div class="tabSec">New Tab</div>
+            <div class="tabNav" id="tabNav1">
+                <div class="tabs currTab">New Tab</div>
+                <div class="tabs">Placeholder</div>
+                <div class="tabs">Placeholder</div>
+                <div class="tabs">Placeholder</div>
+            </div>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="heading-holder" id="holder1">
+                    <h2 class="chartName" id="BTC-USD">BTC/USD (Poloniex)<input class="searchInput" id="searchI1" type="text" name="search1input" placeholder="Search Trading Pair" size="40"> <button class="search" id="search1">Search</button></h2>
                 </div>
-                <div class="tabPlaceholder">
-                    <div class="tabPlaceHead">
-                        <h2>BTC/USD (Poloniex)
-                            <input class="formInputs search" id="search" title="search" type="text" placeholder="Search Trading Pair" size="40">
-                            <button class="search" id="searchBut">Search</button>
-                        </h2>
-                    </div>
-                    <div class="tradePlace">
-                        <!-- TradingView Widget BEGIN -->
-                        <div class="tradingview-widget-container">
-                            <div class="Launch">Launch Chart</div>
-                            <div id="tv-medium-widget"></div>
-                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                            <script type="text/javascript">
-                            new TradingView.MediumWidget(
-                            {
-                            "container_id": "tv-medium-widget",
-                            "symbols": [
+                <button class="launch" id="launchChart1">Launch Chart</button>
+                <div id="tv-medium-widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    new TradingView.MediumWidget(
+                    {
+                        "container_id": "BTC/USD Crypto Chart",
+                        "symbols": [
                             [
-                                "Portfolio",
-                                "BITFINEX:BTCUSD|1y"
+                            "Portfolio",
+                            "BITFINEX:BTCUSD|1y"
                             ]
-                            ],
-                            "greyText": "Quotes by",
-                            "gridLineColor": "rgba(101, 101, 101, 0)",
-                            "fontColor": "#83888D",
-                            "underLineColor": "rgba(252, 229, 205, 0.15)",
-                            "trendLineColor": "rgba(255, 152, 0, 1)",
-                            "width": "100%",
-                            "height": "100%",
-                            "locale": "en",
-                            "chartOnly": true
-                        }
-                            );
-                            </script>
-                        </div>
-                        <!-- TradingView Widget END -->
+                        ],
+                        "gridLineColor": "rgba(101, 101, 101, 0)",
+                        "underLineColor": "rgba(252, 229, 205, 0.15)",
+                        "trendLineColor": "rgba(255, 152, 0, 1)",
+                        "width": "100%",
+                        "height": "540px",
+                        "chartOnly": false
+                    }
+                    );
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+            <!-- Ordering -->
+            <div class="orderPurchases" id="order1">
+                <div class="orderSection" id="orderBook">
+                    <h3 class="orderTitle" id="orderBookTitle">Order Book</h3>
+                    <div class="OrderChartPlaceholder" id="OrderChartPlaceholder"></div>
+                </div>
+                <div class="orderSection" id="orderBook">
+                    <h3 class="orderTitle" id="buySell">Buy/Sell</h3>
+                    <p class="token" id="binance-basic"><span><img src="../imgs/bat-16.png"></span> Basic Attention Token (Binance)</p>
+                    <p class="orderInfo"><strong>Currently Held:</strong><span class="OrderInfoValue"> 1  BAT(0.0001 BTC / 20 USD)</span></p>
+                    <p class="orderInfo"><strong>On Order</strong><span class="OrderInfoValue"> 2.3 BAT (0.00023 BTC / 40 USD)</span></p>
+                    <p class="orderInfo"><strong>Market Price:</strong><span class="OrderInfoValue"> 0.00003 BTC (10 USD)</span></p>
+                    <div class="buySellControls" id="buySellControls">
+                        <button class="buySellBut">Buy</button>
+                        <button class="buySellBut">Sell</button>
                     </div>
-                    <div class="orderTrade">
-                            <div class="orderbook" id="orderbook">
-                                <h2>Order Book</h2>
-                                <div class="chartHold"></div>
-                            </div>
-                            <div class="orderbook" id="buySell">
-                                <h2>Buy/Sell</h2>
-                                <h4>Basic Attention Token (Binance)</h4>
-                                <p><b>Currently Held:</b> 1 BAT (0.0001 BTC / 20 USD)</p>
-                                <p><b>On Order:</b> 2.3 BAT (0.000023 BTC/ 40 USD)</p>
-                                <p><b>Market Price:</b> 0.000003 BTC (10 USD)</p>
-                                <button class="buy_sell" id="buy">Buy</button>
-                                <button class="buy_sell" id="sell">Sell</button>
-                            </div>
-                        </div>
                 </div>
             </div>
-            <div class="condense">^</div>
-            <div class="section" id="section2">
-                <div class="tabPlaceHead">
-                    <h2>Rapid Order
-                        <select class="formInputs" name="tradePaird">
-                            <option value="volvo">Search Trading Pair</option>
-                            <option value="saab">BTC/USD</option>
-                        </select>
-                        <input class="formInputs" type="number" placeholder="Amount">
-                        <select class="formInputs">
-                            <option value="USD">USD</option>
-                            <option value="BTC">BTC</option>
-                        </select>
-                        <select class="formInputs">
-                            <option value="buying">Buy</option>
-                            <option value="selling">Sell</option>
-                        </select>
-                        <button class="buy_sell" type="submit" value="Execute">Execute</button>
-                    </h2>
-                </div>
-            </div>
-            <div class="ROrderDisplay" id="ROrderDisplay">Placeholder</div>
         </div>
     </div>
-     <!-- Scripts -->
-     <script src="../js/dash.js" type="text/javascript">
-     </script>
+    <!-- Scripts -->
+    <script src="../js/dash.js" type="text/javascript">
+    </script>
 </body>
 </html>
