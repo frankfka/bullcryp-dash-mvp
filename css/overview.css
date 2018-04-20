@@ -13,9 +13,10 @@ h1#greeting, h3#currPortfolio {
 h3#currPortfolio {
     font-size: 1.4em;
     color: #FF8F00;
+    margin-bottom: 3em;
 }
 .header {
-    padding-top: 3em;
+    padding-top: 4em;
     background-color: #ffffff;
 }
 #overview_trend {
@@ -101,6 +102,12 @@ table tbody {
     margin-top: 1em;
     padding-top: 0.6em;
     padding-bottom: 0.6em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.newsElement:hover {
+    color: white;
+    background-color: rgba(255,143,0,0.85);
 }
 ul {
     list-style: none;
