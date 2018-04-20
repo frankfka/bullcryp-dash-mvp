@@ -1,10 +1,10 @@
 body {
-    background-color: #FAFAFA;
+    background-color: #EEEEEE;
 }
 h1#greeting {
     margin-top: 60px; 
     font-weight: 1000;
-    font-size: 3.6em;
+    font-size: 4em;
 }
 h1#greeting, h3#currPortfolio {
     text-align: center;
@@ -15,10 +15,8 @@ h3#currPortfolio {
     color: #FF8F00;
 }
 .header {
-    padding-top: 5em;
-    padding-bottom: 2em;
+    padding-top: 3em;
     background-color: #ffffff;
-    border-bottom: solid 0.25px rgba(0,0,0,0.75);
 }
 #overview_trend {
     margin-top: 30px;
@@ -34,14 +32,16 @@ h3#currPortfolio {
     margin-top: 30px;
 }
 .DayInfo {
-    margin-top: 20px;
-    text-align: center;
+    font-size: 1.6em !important;
+    padding: 1em 0.2em 0em;
+    margin: 0 !important;
+    text-align: left;
+    overflow: hidden;
 }
 .gainer, .loser {
     background-color: #ffffff;
-    width: 50%;
-    border: solid 0.25px rgba(0,0,0,0.2);
-    overflow: scroll;        
+    width: 50%; 
+    margin-bottom: 2em;     
 }
 
 .gainer h3, .loser h3, #todayNews h3 {
@@ -52,9 +52,8 @@ h3#currPortfolio {
     margin-left: 70px;
 }
 #todayNews {
-    margin-top: 30px;
     padding-left: 20px;
-    border: solid 0.25px rgba(0,0,0,0.2);
+    border: none;
     background-color: #ffffff;
 }
 table {
@@ -97,9 +96,11 @@ table tbody {
 .newsElement {
     color: #FF8F00;
     display: inline-block;
-    padding: 10px 60px 10px 60px;
-    margin-left: 10%;
     cursor: pointer;
+    width: 33%;
+    margin-top: 1em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
 }
 ul {
     list-style: none;
@@ -145,11 +146,25 @@ p.dateStamp {
 .overviewInfo_item {
     width: 33.33%;
     text-align: center;
+    border-right: #FF8F00 solid 1px;
+    margin-bottom: 1em;
+}
+#most-right {
+    border-right: none;
+}
+.overviewInfo_item h4 {
+    font-size: 2em !important; 
+    margin-bottom: 0 !important;
+}
+.overviewInfo_item p {
+    margin-top: 0 !important;
+    opacity: 0.4;
 }
 h4.price {
     font-size: 16pt;
 }
 .plusgain {
-    color:  #FF8F00;
-    font-size: 14pt;
+    color:  green;
+    font-size: 12pt;
+    opacity: 0.7;    
 }
