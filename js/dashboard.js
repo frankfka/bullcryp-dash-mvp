@@ -72,7 +72,7 @@ function Dexpand(){
 
     //icons vanish
     navElements[0].innerHTML = "<img class='icon_images' src='./imgs/Overview_icon.png' alt='overview'><p>Overview</p>";
-    navElements[1].innerHTML = "<img class='icon_images' src='./imgs/Trade_icon.png' alt='trade'><p>Overview</p>";
-    navElements[2].innerHTML = "<img class='icon_images' src='./imgs/Settings_icon.png' alt='settings'><p>Overview</p>";
-    navElements[3].innerHTML = "<img class='icon_images' src='./imgs/power-button.png' alt='logout'><p>Overview</p>";    
+    navElements[1].innerHTML = "<img class='icon_images' src='./imgs/Trade_icon.png' alt='trade'><p>Trade</p>";
+    navElements[2].innerHTML = "<img class='icon_images' src='./imgs/Settings_icon.png' alt='settings'><p>Settings</p>";
+    navElements[3].innerHTML = "<img class='icon_images' src='./imgs/power-button.png' alt='logout'><p>Logout</p>";    
 }
