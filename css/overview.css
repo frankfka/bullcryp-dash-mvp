@@ -3,20 +3,24 @@ body {
 }
 h1#greeting {
     margin-top: 60px; 
-    font-weight: 1000;
-    font-size: 4em;
+    font-weight: 500;
+    font-size: 5em;
+    color: #EEEEEE !important;
 }
 h1#greeting, h3#currPortfolio {
     text-align: center;
     margin: 0 auto;
 }
 h3#currPortfolio {
-    font-size: 1.4em;
-    color: #FF8F00;
-    margin-bottom: 3em;
+    font-size: 2em;
+    color: #FFA726;
 }
 .header {
-    padding-top: 4em;
+    padding: 7vw 0;
+    background-size: cover;
+    background-image: url("../imgs/unsplash_stocks.jpg");
+}
+.subHeader {
     background-color: #ffffff;
 }
 #overview_trend {
