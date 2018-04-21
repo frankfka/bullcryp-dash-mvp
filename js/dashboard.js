@@ -29,10 +29,10 @@ navElements[0].addEventListener('click', function(ev){
     location.href = "./index.html";
 });
 navElements[1].addEventListener('click', function(ev){
-    location.href = "../bullcryp-dash-mvp/html/trade.html";
+    location.href = "./html/trade.html";
 });
 navElements[2].addEventListener('click',function(ev){
-    location.href = "../bullcryp-dash-mvp/html/portfolio.html";
+    location.href = "./html/settings.html";
 });
 
 

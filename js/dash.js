@@ -31,10 +31,10 @@ navElements[1].addEventListener('click', function(ev){
     location.href = "../html/trade.html";
 });
 navElements[2].addEventListener('click',function(ev){
-    location.href = "../html/portfolio.html";
+    location.href = "../html/settings.html";
 });
 navElements[3].addEventListener('click', function(ev){
-    location.href = "../html/settings.html";
+    location.href = "#";
 });
 
 
@@ -49,21 +49,14 @@ function contract(){
     logo.style.width = "75px";
     logo.style.height = "75px";
     logo.style.transition = "all 0.5s";
-    logout_button.style.width = "70px";
-    logout_button.style.padding = "0";
-    logout_button.style.pointerEvents = "none";
-    logout_button.innerHTML = "";
-    logout_button.style.marginLeft = "0";
-    logout_button.style.opacity = "0";
-    logout_button.style.transition = "all 0.5s";
     display.style.marginLeft = "100px";
     display.style.transition = "all 0.5s";
 
-    //icons
-    navElements[0].innerHTML = "<img width='35' height='35' src='../imgs/Overview_icon.png' alt='overview icon'/>";
-    navElements[1].innerHTML = "<img width='35' height='35' src='../imgs/Trade_icon.png' alt='trade icon'/>";
-    navElements[2].innerHTML = "<img width='35' height='35' src='../imgs/Portfolio_icon.png' alt='portfolio icon'/>";
-    navElements[3].innerHTML = "<img width='35' height='35' src='../imgs/Settings_icon.png' alt='settings icon'/>";
+   //icons
+   navElements[0].innerHTML = "<img width='35' height='35' src='../imgs/Overview_icon.png' alt='overview icon'/>";
+   navElements[1].innerHTML = "<img width='35' height='35' src='../imgs/Trade_icon.png' alt='trade icon'/>";
+   navElements[2].innerHTML = "<img width='35' height='35' src='../imgs/Settings_icon.png' alt='settings icon'/>";
+   navElements[3].innerHTML = "<img width='35' height='35' src='../imgs/power-button.png' alt='logout icon'/>";    
 }
 
 function Dexpand(){
@@ -76,18 +69,12 @@ function Dexpand(){
     logo.style.width = "100px";
     logo.style.height = "100px";
     logo.style.transition = "all 0.5s";
-    logout_button.style.width = "100px";
-    logout_button.style.marginLeft = "35px";
-    logout_button.style.padding = "14px";
-    logout_button.style.pointerEvents = "auto";
-    logout_button.innerHTML = "Logout";
-    logout_button.style.opacity = "1";
     display.style.marginLeft = "200px";
     display.style.transition = "all 0.5s";
 
     //icons vanish
-    navElements[0].innerHTML = "<img class='icon_images' src='../imgs/Overview_icon.png' alt='overview'>Overview";
-    navElements[1].innerHTML = "<img class='icon_images' src='../imgs/Trade_icon.png' alt='trade'>Trade";
-    navElements[2].innerHTML = "<img class='icon_images' src='../imgs/Portfolio_icon.png' alt='portfolio'>Portfolio";
-    navElements[3].innerHTML = "<img class='icon_images' src='../imgs/Settings_icon.png' alt='settings'>Settings";
+    navElements[0].innerHTML = "<img class='icon_images' src='../imgs/Overview_icon.png' alt='overview'><p>Overview</p>";
+    navElements[1].innerHTML = "<img class='icon_images' src='../imgs/Trade_icon.png' alt='trade'><p>Trade</p>";
+    navElements[2].innerHTML = "<img class='icon_images' src='../imgs/Settings_icon.png' alt='settings'><p>Settings</p>";
+    navElements[3].innerHTML = "<img class='icon_images' src='../imgs/power-button.png' alt='logout'><p>Logout</p>"; 
 }
