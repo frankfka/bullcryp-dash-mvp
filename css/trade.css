@@ -5,6 +5,8 @@
 /* Head Tabs */
 .tabNav {
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .tabs {
     margin-top: 3em;
@@ -23,13 +25,42 @@
     padding: 3px 10px 3px 10px;
     margin-left: 25px;
 }
-#search1 {
+#search1, #add1 {
     font-size: 16pt;
     background-color: #FF8F00;
     color: white;
     border: solid 1px black;
     cursor: pointer;
+    padding: 2px 15px 2px 15px;
 }
+
+#add1 {
+    position: relative;
+    display: inline-block;
+}
+
+#add1 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 15px 2px 15px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltiptext {
+    font-size: 12pt;
+}
+
+#add1:hover .tooltiptext {
+    visibility: visible;
+}
+
 .launch {
     position: relative;
     float: right;
@@ -45,8 +76,11 @@
 .orderSection {
     padding: 14px;
 }
-div#order1 {
+div#order1, div.orderBookCont {
     display: flex;
+    background-color: white;
+}
+.orderBooks {
     background-color: white;
 }
 #orderBookTitle {
@@ -67,4 +101,77 @@ div#order1 {
     background-color: #FF8F00;
     color: white;
     cursor: pointer;
+}
+
+/* Draggable objects */
+#watch {
+    position: fixed;
+    z-index: 9;
+    text-align: center;
+    box-shadow: 3px 5px 18px #525252;
+    background-color: white;
+    display: flex;
+    user-select: none;
+    border: solid 0.4px gray;
+}
+
+#watch_Drag {
+    width: 5px;
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-image: url('../imgs/draggable.png');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.box1 {
+    font-size: 8pt;
+    padding: 5px 40px 5px 8px;
+    text-align: left;
+    border: solid 0.4px gray;
+}
+
+.box2 {
+    font-size: 8pt;
+    text-align: center;
+    padding: 13px 3px 5px 3px;
+    border: solid 0.4px gray;
+}
+
+#sell1Info {
+    background-color: rgb(255, 212, 212);
+}
+
+#buy1Info {
+    background-color: rgb(191, 223, 255);
+}
+
+#sellspan {
+    color: red;
+}
+
+#buyspan {
+    color: blue;
+}
+
+.classicTitle {
+    padding: 15px;
+}
+
+.compress_control {
+    text-align: center;
+    color: #FF8F00;
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+}
+
+#OrderTitle1 {
+    text-align: center;
+}
+
+div#placeholder1 {
+    height: 260px;
+    background-color: gray;
 }

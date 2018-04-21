@@ -40,14 +40,14 @@ navElements[3].addEventListener('click', function(ev){
 
 // primary functions
 function contract(){
-    dashboard.style.width = "100px";
-    navigation.style.width = "100px";
+    dashboard.style.width = "125px";
+    navigation.style.width = "125px";
     navigation.style.textAlign = "center";
     dashboard.style.transition = "all 0.5s";
     navigation.style.transition = "all 0.5s";
     logo.style.marginLeft = "25px";
-    logo.style.width = "50px";
-    logo.style.height = "50px";
+    logo.style.width = "75px";
+    logo.style.height = "75px";
     logo.style.transition = "all 0.5s";
     logout_button.style.width = "70px";
     logout_button.style.padding = "0";
@@ -60,10 +60,10 @@ function contract(){
     display.style.transition = "all 0.5s";
 
     //icons
-    navElements[0].innerHTML = "<img width='50' height='50' src='../imgs/Overview_icon.png' alt='overview icon'/>";
-    navElements[1].innerHTML = "<img width='50' height='50' src='../imgs/Trade_icon.png' alt='trade icon'/>";
-    navElements[2].innerHTML = "<img width='50' height='50' src='../imgs/Portfolio_icon.png' alt='portfolio icon'/>";
-    navElements[3].innerHTML = "<img width='50' height='50' src='../imgs/Settings_icon.png' alt='settings icon'/>";
+    navElements[0].innerHTML = "<img width='35' height='35' src='../imgs/Overview_icon.png' alt='overview icon'/>";
+    navElements[1].innerHTML = "<img width='35' height='35' src='../imgs/Trade_icon.png' alt='trade icon'/>";
+    navElements[2].innerHTML = "<img width='35' height='35' src='../imgs/Portfolio_icon.png' alt='portfolio icon'/>";
+    navElements[3].innerHTML = "<img width='35' height='35' src='../imgs/Settings_icon.png' alt='settings icon'/>";
 }
 
 function Dexpand(){
