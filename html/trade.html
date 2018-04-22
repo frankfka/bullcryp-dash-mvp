@@ -34,6 +34,7 @@
             <h1 class="headingBig" id="trade">Trading Dashboard</h1> 
             <div class="tabNav" id="tabNav1">
                     <div class="tabs currTab">New Tab</div>
+                    <div class="tabs"><a href="trade-example.html">BTC/USD (Poloniex)</a></div>                    
                     <div class="tabs addTab">+</div>                            
                 </div>         
             <div id="chart-and-orders">
@@ -45,7 +46,7 @@
                     <button class="launch" id="launchChart1">Launch Advanced Chart</button>
                     <script type="text/javascript">
                         document.getElementById("launchChart1").addEventListener('click', function(ev){
-                            location.href = "#";
+                            location.href = "trade-example.html";
                         });
                     </script>
                     <div id="tv-medium-widget"></div>
@@ -73,8 +74,8 @@
                 <!-- TradingView Widget END -->
                 <!-- Ordering -->
                 <div class="orderPurchases" id="order1">
-                    <div class="orderSection" id="orderBook">
-                        <h3 class="orderTitle" id="orderBookTitle">Order Book</h3>
+                    <h3 class="orderTitle" id="orderBookTitle">Rapid Order</h3>                    
+                    <!-- <div class="orderSection" id="orderBook">
                         <img draggable="false" src="../imgs/orderBook.png" class="OrderChartPlaceholder" id="OrderChartPlaceholder"/>
                     </div>
                     <div class="orderSection">
@@ -87,7 +88,7 @@
                             <button class="buySellBut">Buy</button>
                             <button class="buySellBut">Sell</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="tabbedCoinOverview">

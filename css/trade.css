@@ -1,7 +1,10 @@
 .heading-holder {
     padding-left: 40px;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 /* Head Tabs */
 .tabNav {
     overflow-x: hidden;

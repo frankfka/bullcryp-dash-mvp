@@ -87,7 +87,7 @@ table tbody {
 .newscontainer {
     padding-left: 1em !important;
     padding-right: 1.2em !important;  
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     margin-top: 1em;  
 }
 .news_nav {
@@ -106,12 +106,9 @@ table tbody {
     margin-top: 1em;
     padding-top: 0.6em;
     padding-bottom: 0.6em;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
 }
 .newsElement:hover {
-    color: white;
-    background-color: rgba(255,143,0,0.85);
+    border-bottom: solid 1px #FF8F00;    
 }
 ul {
     list-style: none;
@@ -121,7 +118,6 @@ ul {
 .picture {
     width: 120px;
     height: 120px;
-    background-color: gray;
     float: left;
     margin-right: 20px;
     background-image: url('../imgs/btc_sample.jpg');
@@ -157,11 +153,7 @@ p.dateStamp {
 .overviewInfo_item {
     width: 33.33%;
     text-align: center;
-    border-right: #FF8F00 solid 1px;
     margin-bottom: 1em;
-}
-#most-right {
-    border-right: none;
 }
 .overviewInfo_item h4 {
     font-size: 2em !important; 
