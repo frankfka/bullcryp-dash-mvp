@@ -31,63 +31,72 @@
         </div>
         <!--Main Display-->
         <div class="display" id="generalDisplay">
+            <h1 class="headingBig" id="trade">Trading Dashboard</h1> 
             <div class="tabNav" id="tabNav1">
-                <div class="tabs currTab">New Tab</div>
-                <div class="tabs">Placeholder</div>
-                <div class="tabs">Placeholder</div>
-                <div class="tabs">Placeholder</div>
-            </div>
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
+                    <div class="tabs currTab">New Tab</div>
+                    <div class="tabs addTab">+</div>                            
+                </div>         
+            <div id="chart-and-orders">
                 <div class="heading-holder" id="holder1">
-                    <h2 class="chartName" id="BTC-USD">BTC/USD (Poloniex)<input class="searchInput" id="searchI1" type="text" name="search1input" placeholder="Search Trading Pair" size="40"> <button class="search" id="search1">Search</button></h2>
+                        <h2 class="chartName" id="BTC-USD">BTC/USD (Poloniex)<input class="searchInput" id="searchI1" type="text" name="search1input" placeholder="Search Trading Pair" size="40"></h2>
                 </div>
-                <button class="launch" id="launchChart1">Launch Chart</button>
-                <script type="text/javascript">
-                    document.getElementById("launchChart1").addEventListener('click', function(ev){
-                        location.href = "advTrade.html";
-                    });
-                </script>
-                <div id="tv-medium-widget"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                <script type="text/javascript">
-                    new TradingView.MediumWidget(
-                    {
-                        "container_id": "BTC/USD Crypto Chart",
-                        "symbols": [
-                            [
-                            "Portfolio",
-                            "BITFINEX:BTCUSD|1y"
-                            ]
-                        ],
-                        "gridLineColor": "rgba(101, 101, 101, 0)",
-                        "underLineColor": "rgba(252, 229, 205, 0.15)",
-                        "trendLineColor": "rgba(255, 152, 0, 1)",
-                        "width": "100%",
-                        "height": "540px",
-                        "chartOnly": false
-                    }
-                    );
-                </script>
-            </div>
-            <!-- TradingView Widget END -->
-            <!-- Ordering -->
-            <div class="orderPurchases" id="order1">
-                <div class="orderSection" id="orderBook">
-                    <h3 class="orderTitle" id="orderBookTitle">Order Book</h3>
-                    <img draggable="false" src="../imgs/orderBook.png" class="OrderChartPlaceholder" id="OrderChartPlaceholder"/>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <button class="launch" id="launchChart1">Launch Advanced Chart</button>
+                    <script type="text/javascript">
+                        document.getElementById("launchChart1").addEventListener('click', function(ev){
+                            location.href = "#";
+                        });
+                    </script>
+                    <div id="tv-medium-widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.MediumWidget(
+                        {
+                            "container_id": "BTC/USD Crypto Chart",
+                            "symbols": [
+                                [
+                                "Portfolio",
+                                "BITFINEX:BTCUSD|1y"
+                                ]
+                            ],
+                            "gridLineColor": "rgba(101, 101, 101, 0)",
+                            "underLineColor": "rgba(252, 229, 205, 0.15)",
+                            "trendLineColor": "rgba(255, 152, 0, 1)",
+                            "width": "100%",
+                            "height": "540px",
+                            "chartOnly": false
+                        }
+                        );
+                    </script>
                 </div>
-                <div class="orderSection" id="orderBook">
-                    <h3 class="orderTitle" id="buySell">Buy/Sell</h3>
-                    <p class="token" id="binance-basic"><span><img src="../imgs/bat-16.png"></span> Basic Attention Token (Binance)</p>
-                    <p class="orderInfo"><strong>Currently Held:</strong><span class="OrderInfoValue"> 1  BAT(0.0001 BTC / 20 USD)</span></p>
-                    <p class="orderInfo"><strong>On Order</strong><span class="OrderInfoValue"> 2.3 BAT (0.00023 BTC / 40 USD)</span></p>
-                    <p class="orderInfo"><strong>Market Price:</strong><span class="OrderInfoValue"> 0.00003 BTC (10 USD)</span></p>
-                    <div class="buySellControls" id="buySellControls">
-                        <button class="buySellBut">Buy</button>
-                        <button class="buySellBut">Sell</button>
+                <!-- TradingView Widget END -->
+                <!-- Ordering -->
+                <div class="orderPurchases" id="order1">
+                    <div class="orderSection" id="orderBook">
+                        <h3 class="orderTitle" id="orderBookTitle">Order Book</h3>
+                        <img draggable="false" src="../imgs/orderBook.png" class="OrderChartPlaceholder" id="OrderChartPlaceholder"/>
+                    </div>
+                    <div class="orderSection">
+                        <h3 class="orderTitle" id="buySell">Buy/Sell</h3>
+                        <p class="token" id="binance-basic"><span><img src="../imgs/bat-16.png"></span> Basic Attention Token (Binance)</p>
+                        <p class="orderInfo"><strong>Currently Held:</strong><span class="OrderInfoValue"> 1  BAT(0.0001 BTC / 20 USD)</span></p>
+                        <p class="orderInfo"><strong>On Order</strong><span class="OrderInfoValue"> 2.3 BAT (0.00023 BTC / 40 USD)</span></p>
+                        <p class="orderInfo"><strong>Market Price:</strong><span class="OrderInfoValue"> 0.00003 BTC (10 USD)</span></p>
+                        <div class="buySellControls" id="buySellControls">
+                            <button class="buySellBut">Buy</button>
+                            <button class="buySellBut">Sell</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="tabbedCoinOverview">
+                    <div class="tabRow">
+                            <div class="tabItem current" id="holdings">Holdings</div>
+                            <div class="tabItem" id="orders">Orders</div>
+                            <div class="tabItem" id="market_movers">Market Movers</div>
+                            <div class="tabItem" id="watchlist">Watchlist</div>                        
+                    </div>
             </div>
         </div>
     </div>

@@ -4,36 +4,59 @@
 
 /* Head Tabs */
 .tabNav {
-    display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;    
+    font-size: 1.2em;
+}
+#chart-and-orders {
+    background-color: white;
+    margin: 40px;    
 }
 .tabs {
-    margin-top: 3em;
     text-align: center;
-    width: 25%;
+    width: 20%;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+.headingBig {
+    background-image: url("../imgs/unsplash_stocks.jpg");
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 1em 0 1em 1.4em;
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+}
+.tabs:hover {
+    border-bottom: solid 1px #FF8F00;
+}
+.addTab {
+    width: 5%;
 }
 .currTab {
     color: #FF8F00;
-    border-bottom: solid 3px #FF8F00;
+    border-bottom: solid 1px #FF8F00;
 }
 #searchI1 {
-    font-size: 14pt;
+    font-size: 12pt;
     border: solid 1px #FF8F00;
     padding: 3px 10px 3px 10px;
     margin-left: 25px;
+    width: 200px;
 }
 #search1, #add1 {
-    font-size: 16pt;
+    font-size: 12pt;
     background-color: #FF8F00;
     color: white;
-    border: solid 1px black;
+    border: none;
     cursor: pointer;
-    padding: 2px 15px 2px 15px;
+    padding: 4px 15px 4px 15px;
 }
-
 #add1 {
     position: relative;
     display: inline-block;
@@ -60,7 +83,6 @@
 #add1:hover .tooltiptext {
     visibility: visible;
 }
-
 .launch {
     position: relative;
     float: right;
@@ -73,8 +95,18 @@
     border: none;
     cursor: pointer;
 }
+.chartName {
+    margin: 0;
+    padding-top: 1em;
+}
 .orderSection {
-    padding: 14px;
+    padding-left: 14px;
+    padding-right: 14px;    
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+.orderSection h3 {
+    font-size: 1.4em;
 }
 div#order1, div.orderBookCont {
     display: flex;
@@ -94,13 +126,39 @@ div#order1, div.orderBookCont {
     line-height: 60%;
 }
 .buySellBut {
-    margin-top: 18px;
+    margin-top: 6px;
     text-align: center;
-    font-size: 14pt;
-    padding: 10px 60px 10px 60px;
+    font-size: 12pt;
+    padding: 8px 60px 8px 60px;
     background-color: #FF8F00;
+    border: none;
     color: white;
     cursor: pointer;
+}
+.tabbedCoinOverview {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 2em;
+    height: 600px;
+    background-color: white;
+    margin: 40px;        
+}
+.tabRow {
+    padding: 10px;
+    border-collapse: collapse;
+}
+.tabItem {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.tabItem:hover {
+    border-bottom: solid 1px #FF8F00;
+}
+.current {
+    color: #FF8F00;
+    border-bottom: solid 1px #FF8F00;
 }
 
 /* Draggable objects */
