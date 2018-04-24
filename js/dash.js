@@ -12,11 +12,11 @@ var dash_clicks = 0;
 controls.addEventListener('click', function expand(ev){
     dash_clicks++;
     if (dash_clicks == 1){
-        controls.innerHTML = "&gt;";
+        controls.innerHTML = "<img class='icon_images' src='../imgs/keyboard-right-arrow-button.png'>";
         // dashboard and navigation and elements contract
         contract();
     } else if (dash_clicks == 2){
-        controls.innerHTML = "&lt;";
+        controls.innerHTML = "<img class='icon_images' src='../imgs/left-arrow-key.png'>"; 
         dash_clicks = 0;
         // dashboard expand
         Dexpand();
