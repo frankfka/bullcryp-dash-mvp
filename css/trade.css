@@ -141,8 +141,8 @@ div#order1, div.orderBookCont {
 .tabbedCoinOverview {
     margin-bottom: 2em;
     height: 600px;
-    background-color: rgb(242, 241, 241);
-    margin: 40px;        
+    margin: 40px;       
+    background-color: white; 
 }
 .tabRow {
     padding: 10px;
@@ -238,9 +238,9 @@ div#placeholder1 {
 
 table#holdTable {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 15px;
     text-align: left;
-    width: 90%;
+    width: 95%;
     padding: 20px;
     border-collapse: collapse;
 }
@@ -259,11 +259,12 @@ tbody > tr > td {
     user-select: none;
 }
 tbody > tr:hover {
-    background-color: darkgray;
+    background-color: #F5F5F5;
 }
 
 .formElements {
     padding: 0.5em 3.5em 0.5em 1em;
+    margin-left: 30px;
     font: 14pt;
     border: solid 1px #FF8F00;
 }
@@ -306,5 +307,6 @@ select.classic {
     background-color: #FF8F00;
     color: white;
     padding: 4px 10px 4px 10px;
+    border: none;
     cursor: pointer;
 }

@@ -152,7 +152,7 @@ function displayOrders(){
     tableHead.innerHTML = "<tr><th width='30%'>Pair</th><th>Current Price</th><th>Type</th><th>Bid/Ask</th><th>Amount</th><th>Value</th><th></th><th></th></tr>";
     for (var i = 0; i < myOrderArr.length; i++){
         tableBody.innerHTML += "";
-        tableRow.innerHTML = "<td>"+myOrderArr[i].pair.first+" -> "+myOrderArr[i].pair.second+" ("+myOrderArr[i].pair.exchange+")"+"</td>" + "<td>"+myOrderArr[i].curr_price+myOrderArr[i].pair.first+"</td>" + "<td>"+myOrderArr[i].type+"</td>" + "<td>"+myOrderArr[i].bid+myOrderArr[i].pair.first+"</td>" + "<td>"+myOrderArr[i].amt+myOrderArr[i].pair.second+"</td>" + "<td>"+myOrderArr[i].value+myOrderArr[i].pair.first+"</td>"+"<td><button class='button'>Change</button>"+"</td>"+"<td><button class='button'>X</button>"+"</td>";
+        tableRow.innerHTML = "<td>"+myOrderArr[i].pair.first+" / "+myOrderArr[i].pair.second+" ("+myOrderArr[i].pair.exchange+")"+"</td>" + "<td>"+myOrderArr[i].curr_price+myOrderArr[i].pair.first+"</td>" + "<td>"+myOrderArr[i].type+"</td>" + "<td>"+myOrderArr[i].bid+myOrderArr[i].pair.first+"</td>" + "<td>"+myOrderArr[i].amt+myOrderArr[i].pair.second+"</td>" + "<td>"+myOrderArr[i].value+myOrderArr[i].pair.first+"</td>"+"<td><button class='button'>Edit</button>"+"</td>"+"<td><button class='button'>X</button>"+"</td>";
         table.appendChild(tableBody);
         tableBody.appendChild(tableRow);
     }
@@ -177,7 +177,7 @@ function displayMarketMovers(){
     table.appendChild(tableHead);
     orderdisplay.appendChild(controls);
     orderdisplay.appendChild(table);
-    controls.innerHTML = "<input class='formElements' type='text' placeholder='Filter for Pair'><select class='classic'><option value='All Exchanges'>All Exchanges</option><option value='Binance'>Binance</option></select>";
+    controls.innerHTML = "<input class='formElements' type='text' placeholder='Filter for Pair'><select class='classic'><option value='All Exchanges'>All Exchanges</option><option value='Binance'>Binance</option><option value='Poloniex'>Poloniex</option><option value='QuadrigaCX'>QuadrigaCX</option></select>";
 }
 
 displayHoldings();
