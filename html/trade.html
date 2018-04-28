@@ -75,6 +75,22 @@
             </div>
             <!-- Rapid Order Under Construction -->
             <div class="tabbedCoinOverview">
+                <div class="rapidOrder" id="rapidOrder">
+                    <h2 class="chartName" id="rpdOrder">Rapid Order</h2>
+                    <select class="classic" id="selectPair">
+                        <option>Select Trading Pair</option>
+                        <option>BTC / USD</option>
+                    </select>
+                    <input class="classic" id="amount" type="number" placeholder="Amount"/>
+                    <select class="classic" id="selectCurr">
+                        <option>USD</option>
+                    </select>
+                    <select class="classic" id="selectType">
+                        <option>Buy</option>
+                        <option>Sell</option>
+                    </select>
+                    <button class="button" id="Execute">Execute</button>
+                </div>
                 <div class="tabRow">
                     <div class="tabItem current" id="holdings">Holdings</div>
                     <div class="tabItem" id="orders">Orders</div>

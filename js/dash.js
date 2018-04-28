@@ -49,7 +49,7 @@ function contract(){
     logo.style.width = "75px";
     logo.style.height = "75px";
     logo.style.transition = "all 0.5s";
-    display.style.marginLeft = "100px";
+    display.style.marginLeft = "125px";
     display.style.transition = "all 0.5s";
 
    //icons

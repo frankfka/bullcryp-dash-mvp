@@ -310,3 +310,20 @@ select.classic {
     border: none;
     cursor: pointer;
 }
+#rpdOrder {
+    padding: 30px;
+    display: inline-block;     
+}
+#Execute {
+    display: inline-block; 
+    font-size: 14pt;
+    margin: 10px;
+    padding: 2px 10px 2px 10px;
+    line-height: 1.6em;
+    transform: translate(0, 2px);
+}
+input#amount {
+    font-size: 12pt;
+    padding: 2px 10px 2px 10px;
+    transform: translate(0, 2px);
+}
