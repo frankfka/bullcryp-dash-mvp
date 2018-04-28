@@ -37,37 +37,57 @@
                     <div class="tabs currTab">BTC/USD (Poloniex)</div>                    
                     <div class="tabs addTab">+</div>                            
             </div> 
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-                <div id="tradingview_19215"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                <script type="text/javascript">
-                    new TradingView.widget(
-                        {
-                            "width": '100%',
-                            "height": 610,
-                            "symbol": "COINBASE:BTCUSD",
-                            "interval": "D",
-                            "timezone": "Etc/UTC",
-                            "theme": "Light",
-                            "style": "1",
-                            "locale": "en",
-                            "toolbar_bg": "#f1f3f6",
-                            "enable_publishing": false,
-                            "withdateranges": true,
-                            "hide_side_toolbar": false,
-                            "allow_symbol_change": true,
-                            "save_image": false,
-                            "container_id": "tradingview_19215"
-                        }
-                    );
-                </script>
-            </div>
-            <!-- TradingView Widget END -->  
+            <div class="viewInfo">
+                <div class="tradeContainer" id="tradeContainer">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <img class="bookImg" id="bookImg" src="../imgs/book.png"/>
+                        <div id="tradingview_19215"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                            new TradingView.widget(
+                                {
+                                    "width": '100%',
+                                    "height": 610,
+                                    "symbol": "COINBASE:BTCUSD",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "Light",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "withdateranges": true,
+                                    "hide_side_toolbar": false,
+                                    "allow_symbol_change": true,
+                                    "save_image": false,
+                                    "container_id": "tradingview_19215"
+                                }
+                            );
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                    <div class="orderHoldings" id="orderHoldings">
+                        <div class="orderHoldingConts" id="orderHoldingConts">
+                            <div class="HContsItem">Open Orders</div>
+                            <div class="HContsItem">Order History</div>
+                            <div class="HContsItem">Trade History</div>
+                            <div class="HContsItem">Funds</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderBook" id="orderBook">
+                    <div>
+                        <div class="orderS">Sell</div>
+                        <div class="orderS">Buy</div>
+                    </div>
+                    <div>Hi</div>
+                </div>
+            </div>  
         </div>
     </div>
     <!-- Scripts -->
-    <script src="../js/dash.js" type="text/javascript">
-    </script>
+    <script src="../js/dash.js" type="text/javascript"></script>
+    <script src="../js/advTrade.js" type="text/javascript"></script>
 </body>
 </html>

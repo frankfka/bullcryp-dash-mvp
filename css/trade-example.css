@@ -7,8 +7,7 @@ a {
 }
 /* Head Tabs */
 .tabNav {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     padding-left: 1em;
     padding-right: 1em;
     background-color: white;    
@@ -50,4 +49,37 @@ a {
     cursor: pointer;
     border: none;
     margin-bottom: 1em;
+}
+.bookImg {
+    position: absolute;
+    width: 46px;
+    z-index: 100;
+    left: 70%;
+    cursor: pointer;
+}
+.viewInfo {
+    display: flex;
+}
+.tradeContainer {
+    width: 70%;
+}
+.orderBook {
+    width: 30%;
+    display: flex;
+    height: 880px;
+    background-color: #FF8F00;
+}
+.orderS {
+    overflow: scroll;
+}
+.orderHoldingConts {
+    display: flex;
+}
+.HContsItem {
+    width: 140px;
+    padding: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #212121;
+    color: white;
 }
