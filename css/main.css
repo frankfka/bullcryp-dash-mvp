@@ -17,6 +17,7 @@ body {
 /**** Display Elements ****/
 .display {
     margin-left: 200px;
+    overflow-x: hidden;
 }
 .margin {
     margin-left: 40px;
