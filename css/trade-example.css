@@ -83,3 +83,7 @@ a {
     background-color: #212121;
     color: white;
 }
+.orderHolder {
+    height: 240px;
+    background-color: gray;
+}
