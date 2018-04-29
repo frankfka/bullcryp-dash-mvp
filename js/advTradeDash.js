@@ -18,8 +18,8 @@ orderToggle.addEventListener('click', function(ev){
         tradeContainer.style.transition = "all 0.5s";
         orderBook.style.transition = "all 0.5s";
     } else if (orderToggleClick == 2){
-        tradeContainer.style.width = "70%";
-        orderBook.style.width = "30%";
+        tradeContainer.style.width = "100%";
+        orderBook.style.width = "40%";
         orderToggle.style.left = "70%";
         orderToggle.style.transition = "all 0.5s";
         tradeContainer.style.transition = "all 0.5s";

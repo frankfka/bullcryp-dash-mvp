@@ -61,33 +61,73 @@ a {
     display: flex;
 }
 .tradeContainer {
-    width: 70%;
+    width: 100%;
 }
 .orderBook {
-    width: 30%;
+    width: 40%;
     height: 880px;
-    background-color: #FF8F00;
-}
-.orderDiv {
-    display: flex;
-}
-.orderS {
-    width: 100%;
-    height: 300px;
-    background-color: fuchsia;
+    background-color: white;
 }
 .orderHoldingConts {
     display: flex;
 }
 .HContsItem {
+    text-align: center;
     width: 140px;
     padding: 4px;
     margin-left: 10px;
     cursor: pointer;
-    background-color: #212121;
-    color: white;
 }
-.orderHolder {
-    height: 240px;
-    background-color: gray;
+.pricetable {
+    height: 300px;
+    overflow-y: scroll
+}
+td, th {
+    width: 150px;
+}
+.listOrder {
+    border-collapse: collapse;
+    font-size: 12pt;
+    text-align: center;
+}
+.listOrder > thead {
+    color: white;
+    background-color: #FF8F00;
+}
+.listOrder > tbody > tr:hover {background-color: #ddd;}
+#selltable {
+    color: red;
+}
+#buytable {
+    color: green;
+}
+.orderHoldingsCont {
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    height: 280px;
+}
+.orderHoldingControl {
+    display: flex;
+}
+.item1 {
+    width: 100%;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#buyselltable {
+    padding: 25px;
+    width: 100%;
+}
+input {
+    width: 220px;
+}
+.execute {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14pt;
+    color: white;
+    background-color: #FF8F00;
 }

@@ -71,7 +71,7 @@
                     <!-- TradingView Widget END -->
                     <div class="orderHoldings" id="orderHoldings">
                         <div class="orderHoldingConts" id="orderHoldingConts">
-                            <div class="HContsItem">Open Orders</div>
+                            <div class="HContsItem currTab">Open Orders</div>
                             <div class="HContsItem">Order History</div>
                             <div class="HContsItem">Trade History</div>
                             <div class="HContsItem">Funds</div>
@@ -79,19 +79,131 @@
                         <div class="orderHolder" id="orderHolder"></div>
                     </div>
                 </div>
+                <!-- OrderBook -->
                 <div class="orderBook" id="orderBook">
-                    <div class="orderDiv">
                         <div class="holdeOrders">
-                            <div class="orderS">
-                                <div>Sell Orders</div>
-                            </div>
-                            <div class="orderS">
-                                <div>Buy Orders</div>
-                            </div>
-                        </div>
-                        <div>Hi</div>
+                                <div class="pricetable" id="sellOrders">
+                                    <table class="listOrder">
+                                        <thead>
+                                            <th>Price (BTC)</th>
+                                            <th>Amount (BNB)</th>
+                                            <th>Total (BTC)</th>
+                                        </thead>
+                                        <tbody id="selltable">
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="pricetable" id="buyOrders">
+                                    <table class="listOrder">
+                                        <thead>
+                                            <th>Price (BTC)</th>
+                                            <th>Amount (BNB)</th>
+                                            <th>Total (BTC)</th>
+                                        </thead>
+                                        <tbody id="buytable">
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.00146635</td>
+                                                <td>14.04</td>
+                                                <td>0.02054754</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                     </div>
-                    <div>Hi</div>
+                    <div class="orderHoldingsCont" id="orderHoldingsCont">
+                        <div class="orderHoldingControl">
+                            <div class="item1 currTab">Limit</div>
+                            <div class="item1">Market</div>
+                            <div class="item1">Stop-limit</div>
+                        </div>
+                        <div>
+                            <table id="buyselltable">
+                                <tr>
+                                    <td>Price</td>
+                                    <td><input type="number" placeholder="BTC"></td>
+                                </tr>
+                                <tr>
+                                    <td>Amount</td>
+                                    <td><input type="number" placeholder="BNB"></td>
+                                </tr>
+                                <tr>
+                                    <td>Buy/Sell</td>
+                                    <td>
+                                        <select>
+                                            <option>Buy</option>
+                                            <option>Sell</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button class="execute">Execute</button>
+                        </div>
+                    </div>
                 </div>
             </div>  
         </div>
