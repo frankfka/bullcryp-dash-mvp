@@ -43,7 +43,10 @@
                 <div class="tradeContainer" id="tradeContainer">
                     <!-- TradingView Widget BEGIN -->
                     <div class="tradingview-widget-container">
-                        <img class="bookImg" id="bookImg" src="../imgs/book.png"/>
+                        <div class="onChartButtons">
+                            <button class="onChartBut but" id="expandChart">Full Screen</button>
+                            <button class="onChartBut but" id="orderBookExpand">Order Book</button>     
+                        </div>                   
                         <div id="tradingview_19215"></div>
                         <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                         <script type="text/javascript">
@@ -85,91 +88,101 @@
                                 <div class="pricetable" id="sellOrders">
                                     <table class="listOrder">
                                         <thead>
-                                            <th>Price (BTC)</th>
-                                            <th>Amount (BNB)</th>
-                                            <th>Total (BTC)</th>
+                                            <th>Price (USD)</th>
+                                            <th>Amount (BTC)</th>
+                                            <th>Total (USD)</th>
                                         </thead>
-                                        <tbody id="selltable">
+                                        <tbody id="buytable">
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>10,002</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
-                                                <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td class="topOrder">10,002</td>
+                                                <td class="topOrder">14.04</td>
+                                                <td class="topOrder">10202031</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="summary">
+                                    <h1 id="summaryPrice">$20,000</h1>
+                                    <p id="summaryPriceChange">↑10%</p>
+                                    <p id="summaryAvailable">Available: $12,000 USD | 2.34 BTC</p>
+                                </div>
                                 <div class="pricetable" id="buyOrders">
                                     <table class="listOrder">
                                         <thead>
-                                            <th>Price (BTC)</th>
-                                            <th>Amount (BNB)</th>
-                                            <th>Total (BTC)</th>
+                                            <th>Price (USD)</th>
+                                            <th>Amount (BTC)</th>
+                                            <th>Total (USD)</th>
                                         </thead>
-                                        <tbody id="buytable">
+                                        <tbody id="selltable">
                                             <tr>
-                                                <td>0.00146635</td>
-                                                <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td class="topOrder">9,999</td>
+                                                <td class="topOrder">14.04</td>
+                                                <td class="topOrder">10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>9,999</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>9,999</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>9,999</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>9,999</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
                                             </tr>
                                             <tr>
-                                                <td>0.00146635</td>
+                                                <td>9,999</td>
                                                 <td>14.04</td>
-                                                <td>0.02054754</td>
+                                                <td>10202031</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>14.04</td>
+                                                <td>10202031</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -184,24 +197,22 @@
                         <div>
                             <table id="buyselltable">
                                 <tr>
-                                    <td>Price</td>
+                                    <!-- Rectangular switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>                                 
+                                </tr>
+                                <tr>
+                                    <td>Price:</td>
+                                    <td><input type="number" placeholder="USD"></td>
+                                </tr>
+                                <tr>
+                                    <td>Amount:</td>
                                     <td><input type="number" placeholder="BTC"></td>
                                 </tr>
-                                <tr>
-                                    <td>Amount</td>
-                                    <td><input type="number" placeholder="BNB"></td>
-                                </tr>
-                                <tr>
-                                    <td>Buy/Sell</td>
-                                    <td>
-                                        <select>
-                                            <option>Buy</option>
-                                            <option>Sell</option>
-                                        </select>
-                                    </td>
-                                </tr>
                             </table>
-                            <button class="execute">Execute</button>
+                            <button class="execute but">Execute</button>
                         </div>
                     </div>
                 </div>

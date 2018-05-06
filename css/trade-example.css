@@ -50,12 +50,15 @@ a {
     border: none;
     margin-bottom: 1em;
 }
-.bookImg {
+.onChartButtons {
     position: absolute;
-    width: 46px;
     z-index: 100;
-    left: 70%;
+    left: 60%;    
+}
+#expandChart, #orderBookExpand {
     cursor: pointer;
+    margin-top: 6px;
+    display: inline-block;
 }
 .viewInfo {
     display: flex;
@@ -65,25 +68,41 @@ a {
 }
 .orderBook {
     width: 40%;
-    height: 880px;
+    height: 800px;
     background-color: white;
 }
 .orderHoldingConts {
     display: flex;
+    line-height: 2.5;
 }
 .HContsItem {
     text-align: center;
-    width: 140px;
-    padding: 4px;
-    margin-left: 10px;
+    width: 25%;
     cursor: pointer;
+    line-height: 2.5;
 }
 .pricetable {
-    height: 300px;
+    height: 250px;
     overflow-y: scroll
+}
+.summary {
+    text-align: center;
+    height: 110px; 
+}
+#summaryPrice, #summaryPriceChange {
+    display: inline-block;
+    margin: 0;
+}
+#summaryPriceChange {
+    color: #388E3C;
+}
+#summaryAvailable {
+    margin: 0;
+    color: #FF8F00; 
 }
 td, th {
     width: 150px;
+    font-weight: 500;    
 }
 .listOrder {
     border-collapse: collapse;
@@ -91,10 +110,12 @@ td, th {
     text-align: center;
 }
 .listOrder > thead {
-    color: white;
-    background-color: #FF8F00;
+    color: #616161;
 }
-.listOrder > tbody > tr:hover {background-color: #ddd;}
+.topOrder {
+    font-weight: bold !important;
+}
+.listOrder > tbody > tr:hover {background-color: rgb(221, 221, 221);}
 #selltable {
     color: red;
 }
@@ -103,11 +124,16 @@ td, th {
 }
 .orderHoldingsCont {
     position: relative;
-    background-color: rgb(240, 240, 240);
-    height: 280px;
+    background-color: white;
+    height: 200px;
 }
 .orderHoldingControl {
     display: flex;
+    line-height: 2.5;
+}
+.orderHoldings {
+    background-color: white;
+    height: 220px;
 }
 .item1 {
     width: 100%;
@@ -116,18 +142,84 @@ td, th {
     cursor: pointer;
 }
 #buyselltable {
-    padding: 25px;
+    padding: 10px 25px;
     width: 100%;
 }
 input {
     width: 220px;
+    padding: 3px;
 }
 .execute {
     width: 100%;
-    padding: 8px;
-    text-align: center;
+    padding: 8px 0; 
+    margin: 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
     cursor: pointer;
-    font-size: 14pt;
-    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4CAF50;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  input:checked + .slider {
     background-color: #FF8F00;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #FF8F00;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(66px);
+    -ms-transform: translateX(66px);
+    transform: translateX(66px);
+  }
+
+  .slider:after
+{
+ content:'BUY';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 14px;
+}
+
+input:checked + .slider:after
+{  
+  content:'SELL';
 }
