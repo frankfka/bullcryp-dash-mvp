@@ -91,7 +91,7 @@ function FundsData (){
 
     var items = [new Funds('BND', 0.93835656, 0.93835656, '0.00000000', 0.10050953), new Funds('BTC', 0.03950796, 0.03950796, '0.00000000', 0.03950796) /*add more*/];
     for (var i = 0; i < items.length; i++){
-        tBody.innerHTML = "<tr><td>"+items[i].coin+"</td><td>"+items[i].totalBalance+"</td><td>"+items[i].availableBalance+"</td><td>"+items[i].inOrder+"</td><td>"+items[i].btcValue+"</td></tr>";
+        tBody.innerHTML += "<tr><td>"+items[i].coin+"</td><td>"+items[i].totalBalance+"</td><td>"+items[i].availableBalance+"</td><td>"+items[i].inOrder+"</td><td>"+items[i].btcValue+"</td></tr>";
     }
 }
 
