@@ -63,14 +63,14 @@ function OrderHistoryTable (){
     table.appendChild(tBody);
     var trHead = document.createElement("tr");
     tHead.appendChild(trHead);
-    var tableinfo = ['Date', 'Pair', 'Type', 'Side', 'Avg', 'Price', 'Filled', 'Amount', 'Total', 'Trigger Conditions', 'Status'];
+    var tableinfo = ['Date', 'Pair', 'Type', 'Side', 'Avg', 'Price', 'Filled', 'Amount', 'Total', 'Status'];
     for (var i = 0; i < tableinfo.length; i++){
         trHead.innerHTML += "<th>"+tableinfo[i]+"</th>";
     }
 
-    var items = [new orderHistory('04-28 18', 'EOS/BTC', 'Limit', 'Sell', 0.00203000, 0.0020300, '4.00000000', '4.00000000', 0.00812000, "--", 'Filled'), new orderHistory('04-28 18', 'EOS/BTC', 'Limit', 'Sell', 0.00203000, 0.0020300, '4.00000000', '4.00000000', 0.00812000, "--", 'Filled') /*add more*/];
+    var items = [new orderHistory('28/04/16', 'EOS/BTC', 'Limit', 'Sell', 0.00203000, 0.0020300, '4.00', '4.00', 0.00812000, undefined, 'Filled'), new orderHistory('28/04/16', 'EOS/BTC', 'Limit', 'Sell', 0.00203000, 0.0020300, '4.00', '4.00', 0.00812000, undefined, 'Filled') /*add more*/];
     for (var i = 0; i < tableinfo.length; i++){
-        tBody.innerHTML += "<tr><td>"+items[i].date+"</td><td>"+items[i].pair+"</td><td>"+items[i].type+"</td><td>"+items[i].side+"</td><td>"+items[i].avg+"</td><td>"+items[i].price+"</td><td>"+items[i].filled+"</td><td>"+items[i].amount+"</td><td>"+items[i].total+"</td><td>"+items[i].trigCond+"</td><td>"+items[i].status+"</td></tr>";
+        tBody.innerHTML += "<tr><td>"+items[i].date+"</td><td>"+items[i].pair+"</td><td>"+items[i].type+"</td><td>"+items[i].side+"</td><td>"+items[i].avg+"</td><td>"+items[i].price+"</td><td>"+items[i].filled+"</td><td>"+items[i].amount+"</td><td>"+items[i].total+"</td><td>"+items[i].status+"</td></tr>";
     }
 }
 

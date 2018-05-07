@@ -74,6 +74,7 @@ a {
 .orderHoldingConts {
     display: flex;
     line-height: 2.5;
+    border-bottom: 1px solid lightgray;
 }
 .HContsItem {
     text-align: center;
@@ -101,8 +102,10 @@ a {
     color: #FF8F00; 
 }
 td, th {
-    width: 150px;
     font-weight: 500;    
+}
+tr {
+    text-align: center;
 }
 .listOrder {
     border-collapse: collapse;
@@ -125,15 +128,18 @@ td, th {
 .orderHoldingsCont {
     position: relative;
     background-color: white;
-    height: 200px;
+    height: 220px;
 }
 .orderHoldingControl {
     display: flex;
     line-height: 2.5;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;    
 }
 .orderHoldings {
     background-color: white;
     height: 220px;
+    border-right: solid 1px lightgray;    
 }
 .item1 {
     width: 100%;
@@ -143,6 +149,9 @@ td, th {
 }
 #buyselltable {
     padding: 10px 25px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     width: 100%;
 }
 input {
@@ -153,6 +162,7 @@ input {
     width: 100%;
     padding: 8px 0; 
     margin: 0;
+    margin-top: 10px;
 }
 
 /* The switch - the box around the slider */
@@ -160,7 +170,7 @@ input {
     position: relative;
     display: inline-block;
     width: 100px;
-    height: 34px;
+    height: 26px;
     margin-top: 10px;
     margin-left: 25px;
   }
@@ -184,7 +194,7 @@ input {
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
+    height: 18px;
     width: 26px;
     left: 4px;
     bottom: 4px;
@@ -194,11 +204,11 @@ input {
   }
   
   input:checked + .slider {
-    background-color: #FF8F00;
+    background-color: red;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #FF8F00;
+    box-shadow: 0 0 1px red;
   }
   
   input:checked + .slider:before {
@@ -222,4 +232,25 @@ input {
 input:checked + .slider:after
 {  
   content:'SELL';
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    color: rgb(89, 89, 89);
+    border-bottom: solid 1px #FF8F00;  
+}
+tbody > tr > td {
+    cursor: default;
+    user-select: none;
+}
+tbody > tr:hover {
+    background-color: #F5F5F5;
+}
+.orderHolder {
+    padding: 10px 20px;
+}
+#sellOrders {
+    border-top: 1px solid lightgray;
 }
