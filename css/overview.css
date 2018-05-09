@@ -28,6 +28,18 @@ h3#currPortfolio {
     width: 100%;
     height: 400px;
     text-align: center;
+    display: flex;
+}
+#trade-view-cont {
+    width: 100%;
+    margin-right: 4%;
+}
+svg {
+    width: 400px;
+    margin-right: 4%;
+}
+.cls-1:hover, .cls-2:hover, .cls-4:hover {
+    fill: #e44c15;
 }
 .Tgraphs {
     padding-left: 30px;
