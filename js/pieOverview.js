@@ -5,23 +5,23 @@ var pieDisplay = document.getElementById('pie-display');
 var coins = [
     {
         "name": "Bitcoin",
-        "gain": "+1.23%",
+        "gain": " +1.23%",
         "price": "$9,000",
         "available": "0.32 BTC (33%)",
         "value": "0.32 BTC ($3,000 USD)"
     },
     {
-        "name": "Etherium",
-        "gain": "+1.23%",
-        "price": "$9,000",
-        "available": "0.32 BTC (33%)",
+        "name": "Ethereum",
+        "gain": " +1.23%",
+        "price": "$1,000",
+        "available": "1 ETH (33%)",
         "value": "0.32 BTC ($3,000 USD)"
     },
     {
-        "name": "Bitcoin",
-        "gain": "+1.23%",
-        "price": "$9,000",
-        "available": "0.32 BTC (33%)",
+        "name": "0x",
+        "gain": " +1.23%",
+        "price": "$1",
+        "available": "200 ZRX (33%)",
         "value": "0.32 BTC ($3,000 USD)"
     }
 ];
@@ -50,6 +50,13 @@ btcSection.addEventListener('mouseover', function(ev){
 ethSection.addEventListener('mouseover', function(ev){
     PiePopUp();
     pieDisplay.innerHTML = "<p>"+coins[1].name+"<span style='color:green'>"+coins[1].gain+"</span><br>"+coins[1].price+"<br><b>"+"Available: "+coins[1].available+"</b><br><b>"+"Value: "+coins[1].value+"</b></p>";
+    ethSection.addEventListener('mouseout', function(ev){
+        PiePop();
+    });
+});
+zrxSection.addEventListener('mouseover', function(ev){
+    PiePopUp();
+    pieDisplay.innerHTML = "<p>"+coins[2].name+"<span style='color:green'>"+coins[2].gain+"</span><br>"+coins[2].price+"<br><b>"+"Available: "+coins[2].available+"</b><br><b>"+"Value: "+coins[2].value+"</b></p>";
     ethSection.addEventListener('mouseout', function(ev){
         PiePop();
     });
